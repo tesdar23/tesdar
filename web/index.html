@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jaja AI Content Creator Suite (Gemini)</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <h1 id="title">AI CONTENT CREATOR SUITE</h1>
+      <p id="subtitle"></p>
+
+      <div class="keyrow">
+        <input id="apiKeyInput" type="password" placeholder="Tempel Gemini API Key..." />
+        <button id="saveKeyBtn" class="btn" type="button">Simpan</button>
+      </div>
+      <div id="apiKeyHint" class="muted" style="text-align:center;"></div>
+    </header>
+
+    <section class="grid" id="modulesGrid"></section>
+
+    <div class="panel">
+      <div class="panel-header">
+        <div class="panel-title" id="panelTitle">Pilih modul</div>
+      </div>
+
+      <div class="panel-body">
+        <div id="subwrap" class="subwrap" style="display:none;"></div>
+
+        <div id="hint" class="muted">Klik modul/submodul untuk mulai.</div>
+
+        <form id="form" class="form" style="display:none">
+          <div id="fields"></div>
+          <button class="btn" type="submit">GENERATE</button>
+        </form>
+
+        <div id="result" class="result" style="display:none">
+          <div class="result-title">HASIL</div>
+          <pre id="output"></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
