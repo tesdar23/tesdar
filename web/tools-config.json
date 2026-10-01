@@ -1,0 +1,55 @@
+{
+  "title": "AI CONTENT CREATOR SUITE",
+  "subtitle": "TINGGAL PILIH MODUL COPY PASTE DAN PRODUKSI KONTEN AI LANGSUNG JADI INFO BRAY : INFLUENCER VIDEO > PODCAST READY BOSKU !!!",
+  "modules": [
+    {
+      "id": "pabrik",
+      "label": "PABRIK KONTEN",
+      "items": [
+        { "id": "music_clip_v2", "label": "MUSIC CLIP V2", "tag": "NEW" },
+        { "id": "drama_pendek_v2", "label": "DRAMA PENDEK V2", "tag": "V2" },
+        { "id": "scene_extractor", "label": "SCENE EXTRACTOR", "tag": "NEW" },
+        { "id": "jaja_drama_studio", "label": "JAJA DRAMA STUDIO", "tag": "NEW" },
+        { "id": "jaja_podcast", "label": "JAJA PODCAST STUDIO", "tag": "READY BOSKU" },
+        { "id": "frame_extractor", "label": "FRAME EXTRACTOR", "tag": "NEW" },
+        { "id": "meta_ads", "label": "META ADS", "tag": "NEW" }
+      ]
+    },
+    { "id": "character_gen", "label": "CHARACTER GENERATOR" },
+    { "id": "video_gen", "label": "VIDEO GENERATOR" },
+    { "id": "prompt_pack", "label": "PROMPT SIAP PAKAI" },
+    { "id": "character_clone", "label": "CHARACTER CLONE" },
+    { "id": "image_gen", "label": "IMAGE GENERATOR" },
+    { "id": "ugc", "label": "UGC KONTEN" },
+    { "id": "influencer_maker", "label": "INFLUENCER MAKER" }
+  ],
+  "fieldLabels": {
+    "brief": "Brief / Ide utama",
+    "detail": "Detail tambahan (opsional)",
+    "topic": "Topik (opsional)",
+    "audience": "Target audiens (opsional)",
+    "style": "Style / vibe (opsional)",
+    "length": "Panjang output",
+    "reference": "Referensi persona fiktif (jangan orang nyata)",
+    "transcript": "Transcript / teks (untuk extractor)"
+  },
+  "fieldsByToolId": {
+    "pabrik": ["brief"],
+
+    "character_gen": ["brief", "detail", "audience", "style", "length"],
+    "video_gen": ["brief", "detail", "audience", "style", "length"],
+    "prompt_pack": ["brief", "detail", "audience", "style", "length"],
+    "character_clone": ["reference", "brief", "detail", "style", "length"],
+    "image_gen": ["brief", "detail", "style", "length"],
+    "ugc": ["brief", "detail", "audience", "style", "length"],
+    "influencer_maker": ["brief", "detail", "audience", "style", "length"],
+
+    "music_clip_v2": ["brief", "detail", "style", "length"],
+    "drama_pendek_v2": ["brief", "detail", "style", "length"],
+    "scene_extractor": ["transcript", "brief", "detail", "style", "length"],
+    "jaja_drama_studio": ["brief", "detail", "style", "length"],
+    "jaja_podcast": ["brief", "detail", "style", "length"],
+    "frame_extractor": ["brief", "detail", "style", "length"],
+    "meta_ads": ["brief", "detail", "style", "length"]
+  }
+}
